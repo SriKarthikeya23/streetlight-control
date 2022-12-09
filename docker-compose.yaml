@@ -11,6 +11,6 @@ services:
     build:
       context: ./client
     ports:
-      - "6000:6000"
+      - "5001:5001"
     container_name: light-client-side
     stdin_open: true
