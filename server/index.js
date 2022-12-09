@@ -141,6 +141,6 @@ app.get('/get/ct/all', (req, res) => {
     res.send(data);
 });
 
-app.listen(3001, () => {
-    console.log("running on port 3001");
+app.listen(6001, () => {
+    console.log("running on port 6001");
 })
