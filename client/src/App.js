@@ -15,7 +15,7 @@ function App() {
   var light4 = 0;
   
   const getLightData = () => {
-    Axios.get('http://localhost:3001/get/light/all').then((res) => {
+    Axios.get('http://65.49.44.136:6001/get/light/all').then((res) => {
       light1 = res.data.light1;
       light2 = res.data.light2;
       light3 = res.data.light3;
@@ -57,7 +57,7 @@ function App() {
     }
 
     const postLight1 = (state) => {
-      Axios.post("http://localhost:3001/post/light/1", {
+      Axios.post("http://65.49.44.136:6001/post/light/1", {
         data: state
       }).then(() => {
         console.log("Light 1 status sent");
@@ -65,7 +65,7 @@ function App() {
     }
   
     const postLight2 = (state) => {
-      Axios.post("http://localhost:3001/post/light/2", {
+      Axios.post("http://65.49.44.136:6001/post/light/2", {
         data: state
       }).then(() => {
         console.log("Light 2 status sent");
@@ -73,7 +73,7 @@ function App() {
     }
   
     const postLight3 = (state) => {
-      Axios.post("http://localhost:3001/post/light/3", {
+      Axios.post("http://65.49.44.136:6001/post/light/3", {
         data: state
       }).then(() => {
         console.log("Light 3 status sent");
@@ -81,7 +81,7 @@ function App() {
     }
   
     const postLight4 = (state) => {
-      Axios.post("http://localhost:3001/post/light/4", {
+      Axios.post("http://65.49.44.136:6001/post/light/4", {
         data: state
       }).then(() => {
         console.log("Light 4 status sent");
@@ -131,7 +131,7 @@ function App() {
   const [ct4, setCt4] = useState(0);
 
   const getCtData = () => {
-    Axios.get("http://localhost:3001/get/ct/all").then((response) => {
+    Axios.get("http://65.49.44.136:6001/get/ct/all").then((response) => {
       setCt1(response.data.ct1);
       setCt2(response.data.ct2);
       setCt3(response.data.ct3);
