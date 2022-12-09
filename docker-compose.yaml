@@ -4,13 +4,13 @@ services:
     build:
       context: ./server
     ports:
-      - "3001:3001"
-    container_name: server-side
+      - "6001:6001"
+    container_name: light-server-side
 
   client:
     build:
       context: ./client
     ports:
-      - "3000:3000"
-    container_name: client-side
+      - "6000:6000"
+    container_name: light-client-side
     stdin_open: true
