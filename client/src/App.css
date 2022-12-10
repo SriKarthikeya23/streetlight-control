@@ -1,70 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@1,700&display=swap');
+
+
+
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  row-gap: 20px;
+  column-gap: 20px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  text-align: center;
+  color: aliceblue;
+
+}
+.sb{
+  
+  /* border: solid; */
+  background-color: transparent;
+  box-shadow: 0px 2px 6px 0px #000000;
+  padding: 10px;
+  border-radius: 15px;
+
 }
 
-.App-link {
-  color: #61dafb;
+
+h2{
+
+  
+
+  font-size: 33px;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 4px #000000;
+
+  color: rgb(255, 255, 255);
+  font-family: 'Chakra Petch', sans-serif;
+
+}
+.sb{
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 15px;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.ovel{
+  
+ 
+  background-image: url("./sbip.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
 }
 
-.light-control {
-  float:left; 
-  background:WHITE;
-  width:50%;
-  height:500px;
+
+
+*{
+  
+  margin: 0;
+  padding: 0px;
+
+
+ 
+}
+h1{
+   
+  color: rgb(66, 201, 255);
+  text-align: center;
+  align-items: center;
+  /* font-size: 38px; */
+  font-family: 'Kanit', sans-serif;
+  letter-spacing: 2px;
+  text-shadow: 3px 3px 3px #000000;
+
 }
 
-.ct { 
-  float:right;
-  background:WHITE;
-  width:50%;
-  height:500px;
-}
 
-.light {
-  border: 2px solid black;
-  background-color: white;
-  color: black;
-  padding: 14px 28px;
-  font-size: 16px;
-  cursor: pointer;
-}
+
 
 .switch {
   position: relative;
   display: inline-block;
-  width: 60px;
-  height: 34px;
+  width: 65px;
+  height: 37px;
 }
 
 .switch input {
@@ -80,7 +102,9 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #ccc;
+  border: solid;
+  /* background-color: #ccc; */
+  background-color: transparent;
   -webkit-transition: .4s;
   transition: .4s;
 }
@@ -93,6 +117,7 @@
   left: 4px;
   bottom: 4px;
   background-color: white;
+  /* background-color: transparent; */
   -webkit-transition: .4s;
   transition: .4s;
 }
@@ -118,3 +143,4 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
+
