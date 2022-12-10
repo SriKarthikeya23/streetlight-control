@@ -144,44 +144,60 @@ function App() {
   setInterval(window.location.reload, 300000);
 
   return (
+    <div className='ovel'>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+  <h1>SMART STREET LIGHT SYSTEM</h1>
+  <br/>
+  <br/>
+  
     <div className='App'>
-      <h1>Smart Street Light</h1>
 
-      <div className='light-control'>
-        <h1>Light Control</h1>
-
+      <div className='row'>
+        <h2 class="animate-charcter">Light Control</h2>
+        <br/>
+        <br/>
+       <div className='sb'>
         <h3>Light 1</h3>
         <label className="switch" >
           <input type="checkbox" checked={val1} onClick={toggler1}></input>
           <span className="slider round"></span>
         </label>
-
+        <p>CT value 1 = {ct1}</p>
+        </div> 
+        <br/>
+        <div className='sb'>
         <h3>Light 2</h3>
         <label className="switch" >
           <input type="checkbox" checked={val2} onClick={toggler2}></input>
           <span className="slider round"></span>
         </label>
+        <p>CT value 2 = {ct2}</p>
 
+      </div>
+      <br/>
+      <div className='sb'>
         <h3>Light 3</h3>
         <label className="switch" >
           <input type="checkbox" checked={val3} onClick={toggler3}></input>
           <span className="slider round"></span>
         </label>
-
+        <p>CT value 3 = {ct3}</p>
+        </div>
+        <br/>
+        <div className='sb'>
         <h3>Light 4</h3>
         <label className="switch" >
           <input type="checkbox" checked={val4} onClick={toggler4}></input>
           <span className="slider round"></span>
         </label>
-      </div>
+        <p>CT value 4 = {ct4}</p>
 
-      <div className='ct'>
-        <h2>CT values</h2>
-        <p>CT Value 1 = {ct1}</p>
-        <p>CT Value 2 = {ct2}</p>
-        <p>CT Value 3 = {ct3}</p>
-        <p>CT Value 4 = {ct4}</p>
+        </div>
       </div>
+    </div>
     </div>
  );
 }
