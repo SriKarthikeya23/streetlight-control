@@ -141,6 +141,7 @@ function App() {
 
   setInterval(getLightData, 5000);
   setInterval(getCtData, 10000);
+  setInterval(window.location.reload, 300000);
 
   return (
     <div className='App'>
